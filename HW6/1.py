@@ -1,6 +1,5 @@
 from decimal import Decimal
 
-
 def create_list(expr):
     num = ''
     op = ''
@@ -42,5 +41,6 @@ def create_list(expr):
     for i in '/*+':
         make_operation(i)
 
+            return num[sign_index]
 expression = '1+2*3'
 print(create_list(expression))

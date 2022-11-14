@@ -5,12 +5,12 @@
 Пример:
 [1, 2, 3, 5, 1, 5, 3, 10] => [2, 10] и [1, 3, 5] и [1, 2, 5, 3, 10]'''
 
-lst1 = [1, 2, 3, 5, 1, 5, 3, 10]
-lst2, lst3 = [], []
-for i in set(lst1):
-    if lst1.count(i) > 1:
-        lst3.append(i)
+lst = [1, 2, 3, 5, 1, 5, 3, 10]
+uniq_lst, double_lst = [], []
+for i in set(lst):
+    if lst.count(i) > 1:
+        double_lst.append(i)
     else:
-        lst2.append(i)
+        uniq_lst.append(i)
 
-print(f'Начальный список: {lst1}',f'Уникальные элементы: {lst2}',f'Повторные элементы: {lst3}', f'Список без повторных элементов: {list(set(lst1))}', sep = '\n')
+print(f'Начальный список: {lst}',f'Уникальные элементы: {uniq_lst}',f'Повторные элементы: {double_lst}', f'Список без повторных элементов: {list(set(lst))}', sep = '\n')
